@@ -1,0 +1,61 @@
+@font-face {
+  font-family: OpenSans;
+  src: url('../assets/fonts/OpenSans-Light.ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url('../assets/fonts/OpenSans-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url('../assets/fonts/OpenSans-SemiBold.ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url('../assets/fonts/OpenSans-Bold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url('../assets/fonts/OpenSans-Bold.ttf');
+  font-weight: 800;
+}
+
+
+:root {
+  --main-gren: #3ACFB2;
+}
+
+html {
+  font-size: 10px;
+  font-family: OpenSans;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--main-gren);
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+.container {
+  width: 1075px;
+  margin: 0 auto;
+  background: var(--main-gren)
+}
