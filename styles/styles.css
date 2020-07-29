@@ -6,10 +6,23 @@
 .welcomeImages {
   width: 50%;
   min-height: 700px;
-  background: url('/assets/phone_app.png') right center no-repeat,
-              url('/assets/pattern.png') right center no-repeat;
+  background: url('/assets/phone_app.png') no-repeat,
+              url('/assets/pattern.png') no-repeat;
+  background-position:  right center,
+                        right center;
   background-size:  contain,
-                    600px 600px;
+                    contain;
+}
+
+@media screen and (max-width: 776px){
+  .welcomeImages {
+    min-height: 300px;
+    width: 100%;
+    background-position:  center,
+                          center;
+    background-size:  contain,
+                      contain;
+    }
 }
 
 .welcomeContent {
@@ -20,12 +33,26 @@
   padding-left: 30px;
 }
 
+@media screen and (max-width: 776px){
+  .welcomeContent {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
 .about {
-  padding: 130px 0 90px 0;
-  background: url('/assets/trangle.svg') no-repeat,
-              var(--main-green);
-  background-size: 100vw, contain;
-  outline: 2px solid white;
+  padding: 0 0 90px 0;
+  background: var(--main-green);
+}
+
+.trangle {
+  border-width: 80px 50vw 0 50vw;
+  border-style: solid;
+
+  border-top-color: #fff;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
 }
 
 .aboutLines {
@@ -57,6 +84,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 5px;
 }
 
 .featureBox__icon {
@@ -86,6 +114,12 @@
 
 .featureBox__button {
   background: linear-gradient(90deg, rgba(246,190,7,1) 0%, rgba(242,224,4,1) 100%);
+  transition: color 1s;
+}
+
+.featureBox__button:hover {
+  background: #6bffe1;
+  color: rgb(51, 50, 0);
 }
 
 .specialists {
@@ -97,6 +131,7 @@
 }
 
 .sliderContainer {
+  overflow: hidden;
   width: 100%;
   padding: 45px 0 60px 0;
   display: flex;
@@ -188,12 +223,11 @@
   margin: 63px 0 80px 0;
   display: flex;
   align-items: flex-end;
-
 }
 
 .singleOffer {
   margin: 0 18px;
-  width: 350px;
+  max-width: 350px;
   border-radius: 20px;
   box-shadow: 0px 0px 12px -1px rgba(0,0,0,0.5);
 }
@@ -246,6 +280,7 @@
   width: 20px;
   height: 20px;
   background: url('/assets/check.svg') no-repeat center center;
+  flex-shrink: 0;
 }
 
 .singleOfferInfo__text {
@@ -305,7 +340,14 @@
 .singleQuestion__header {
   display: flex;
   align-items: center;
-  margin: 30px 0 ;
+  margin: 0px 0;
+  transition: background .5s;
+  padding: 15px 0 15px 6px;
+}
+
+.singleQuestion__header:hover {
+  background: #3acfb144;
+  cursor: pointer;
 }
 
 .singleQuestion__quest {
@@ -322,6 +364,14 @@
   flex-shrink: 0;
 }
 
+@media screen and (max-width: 776px){
+  .singleQuestion__icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+  }
+}
+
 .singleQuestion__icon-plus {
   background-image: url('/assets/icon_plus.svg');
 }
@@ -333,4 +383,31 @@
 
 .singleQuestion__desc {
   max-width: 100%;
+  padding: 0 0 0 6px;
+}
+
+/* General media queries*/
+@media screen and (max-width: 1100px) {
+  .hideElementLg {
+    display: none;
+  }
+
+  .wrapElementsLg {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .verticalMarginLg {
+    margin: 30px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 776px) {
+  .swichtFlexDirecMobile {
+    flex-direction: column;
+  }
+
+  .swichtFlexDirecAndOrderMobile {
+    flex-direction: column-reverse;
+  }
 }

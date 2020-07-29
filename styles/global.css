@@ -45,6 +45,13 @@ h1 {
   margin: 26px 0 16px 0;
 }
 
+@media screen and (max-width: 776px){
+  h1 {
+    text-align: center;
+    font-size: 3.1rem;
+  }
+}
+
 h3 {
   font-size: 2rem;
   font-weight: 700;
@@ -70,6 +77,20 @@ p {
   max-width: 530px;
 }
 
+@media screen and (max-width: 776px){
+  p {
+    max-width: 100%;
+    text-align: center;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  p {
+    padding: 0px;
+  }
+}
+
 a {
   color: var(--main-green)
 }
@@ -86,8 +107,16 @@ button {
 }
 
 .container {
-  width: 1075px;
+  max-width: 1095px;
+  padding: 0 10px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 776px){
+  h1 {
+    text-align: center;
+    font-size: 3.1rem;
+  }
 }
 
 .centerElements {
