@@ -1,0 +1,336 @@
+.welcome {
+  display: flex;
+  padding-top: 30px;
+}
+
+.welcomeImages {
+  width: 50%;
+  min-height: 700px;
+  background: url('/assets/phone_app.png') right center no-repeat,
+              url('/assets/pattern.png') right center no-repeat;
+  background-size:  contain,
+                    600px 600px;
+}
+
+.welcomeContent {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+}
+
+.about {
+  padding: 130px 0 90px 0;
+  background: url('/assets/trangle.svg') no-repeat,
+              var(--main-green);
+  background-size: 100vw, contain;
+  outline: 2px solid white;
+}
+
+.aboutLines {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 80px;
+  padding-top: 40px;
+}
+
+.aboutLines__line {
+  width: 160px;
+  height: 2px;
+  background: #fff;
+}
+
+.aboutLines__spacer {
+  width: 218px;
+}
+
+.featuresContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.featureBox {
+  max-width: 314px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featureBox__icon {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: #fff;
+  margin: 0 auto;
+}
+
+.featureBox__icon-plane {
+  background-image: url('/assets/plane.svg');
+}
+
+.featureBox__icon-clipboard {
+  background-image: url('/assets/clipboard.svg');
+}
+
+.featureBox__icon-phone {
+  background-image: url('/assets/phone.svg');
+}
+
+.featureBox__title {
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+
+.featureBox__button {
+  background: linear-gradient(90deg, rgba(246,190,7,1) 0%, rgba(242,224,4,1) 100%);
+}
+
+.specialists {
+  padding: 36px 0 70px 0;
+}
+
+.specialist__button {
+  background: var(--main-green);
+}
+
+.sliderContainer {
+  width: 100%;
+  padding: 45px 0 60px 0;
+  display: flex;
+}
+
+.personBox {
+  box-sizing: border-box;
+  width: 256px;
+  padding: 12px 8px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 0px 0px 12px -1px rgba(0,0,0,0.2);
+  margin: 0 auto;
+}
+
+.personBox:first-of-type {
+  margin-left: 0;
+}
+
+.personBox:last-of-type {
+  margin-right: 0;
+}
+
+.personBoxTop {
+  display: flex;
+  border-bottom: 1px solid var(--main-green);
+  padding-bottom: 24px;
+}
+
+.personBoxTop__image {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  background: #D7F2EB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.personBoxTop__image img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: -2px;
+  left: 2px;
+}
+
+.personBoxTop__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 115px;
+  padding-left: 10px;
+}
+
+.personBoxTop__info h5 {
+  color: var(--main-green);
+  font-size: 1.4rem;
+  margin: 3px 0;
+}
+
+.personBoxBottom {
+  padding: 30px 0 18px 0;
+}
+
+.personBoxBottom h5 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--main-green);
+}
+
+.personBoxBottom ul {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  padding-left: 19px;
+}
+
+.personBoxBottom li {
+  margin: 8px 0;
+}
+
+.pricing {
+  background: #F2F2F2;
+  padding: 80px 0;
+}
+
+.pricesBox {
+  margin: 63px 0 80px 0;
+  display: flex;
+  align-items: flex-end;
+
+}
+
+.singleOffer {
+  margin: 0 18px;
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 12px -1px rgba(0,0,0,0.5);
+}
+
+.singleOfferTop {
+  background: var(--main-green);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px; 
+  padding-top: 20px;
+  color: #fff;
+}
+
+.singleOfferTop span{
+  vertical-align: text-top;
+  color: #fff;
+}
+
+
+.singleOfferTop__currency {
+  font-size: 2.8rem;
+  line-height: 40px;
+}
+
+.singleOfferTop__main {
+  font-size: 6rem;
+  line-height: 60px;
+}
+
+.singleOfferTop__rest {
+  font-size: 4rem;
+}
+
+.singleOfferBottom {
+  padding: 30px 36px;
+  background: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px; 
+}
+
+.singleOfferInfo {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.singleOfferInfo__icon {
+  width: 20px;
+  height: 20px;
+  background: url('/assets/check.svg') no-repeat center center;
+}
+
+.singleOfferInfo__text {
+  margin: 0 0 0 15px;
+  font-size: 1.2rem;
+}
+
+.bestOffer {
+  width: 75%;
+  margin: 0 auto;
+  padding: 10px 0;
+  background: linear-gradient(90deg, rgba(246,190,7,1) 0%, rgba(242,224,4,1) 100%);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.bestOffer__icon {
+  width: 17px;
+  height: 17px;
+  background: url('/assets/star.svg');
+}
+
+.bestOffer__text {
+  margin: 0 0 0 10px;
+  color: #fff;
+}
+
+.faq {
+  padding: 76px 0 150px 0;
+}
+
+.tabMenu {
+  margin-top: 10px;
+}
+
+.tabMenu__button {
+  background: none;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.tabMenu__button-active {
+  color: var(--main-green);
+}
+
+.questionsBlock {
+  width: 100%;
+}
+
+.singleQuestion {
+  border-bottom: 1px solid var(--main-green);
+}
+
+.singleQuestion__header {
+  display: flex;
+  align-items: center;
+  margin: 30px 0 ;
+}
+
+.singleQuestion__quest {
+  flex-grow: 1;
+}
+
+.singleQuestion__icon {
+  margin-left: 20px;
+  width: 50px;
+  height: 50px;
+  background-size: 23px 23px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  flex-shrink: 0;
+}
+
+.singleQuestion__icon-plus {
+  background-image: url('/assets/icon_plus.svg');
+}
+
+
+.singleQuestion__icon-minus {
+  background-image: url('/assets/icon_minus.svg');
+}
+
+.singleQuestion__desc {
+  max-width: 100%;
+}
