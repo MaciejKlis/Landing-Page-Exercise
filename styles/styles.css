@@ -130,30 +130,30 @@
   background: var(--main-green);
 }
 
-.sliderContainer {
-  overflow: hidden;
+.sliderWrapper {
   width: 100%;
-  padding: 45px 0 60px 0;
+  margin: 45px 0 60px 0;
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+.sliderContainer {
+  width: 100%;
   display: flex;
+  position: relative;
+  transition: left 1s;
 }
 
 .personBox {
   box-sizing: border-box;
   width: 256px;
-  padding: 12px 8px;
+  padding: 12px 7px;
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
   border-radius: 15px;
   box-shadow: 0px 0px 12px -1px rgba(0,0,0,0.2);
-  margin: 0 auto;
-}
-
-.personBox:first-of-type {
-  margin-left: 0;
-}
-
-.personBox:last-of-type {
-  margin-right: 0;
+  margin: 0 9px;
 }
 
 .personBoxTop {
@@ -212,6 +212,27 @@
 
 .personBoxBottom li {
   margin: 8px 0;
+}
+
+.sliderMenu {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.sliderMenu__arrow {
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center; 
+  margin: 0 25px;
+}
+
+.sliderMenu__arrow-left {
+  background: url('/assets/icon_chevron_left.svg');
+}
+
+.sliderMenu__arrow-right {
+  background: url('/assets/icon_chevron_right.svg');
 }
 
 .pricing {

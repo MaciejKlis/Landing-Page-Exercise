@@ -70,86 +70,95 @@
       <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, error,
         dicta quis totam pariatur itaque deleniti nemo ea eaque non vitae minima eos iusto </p>
 
-      <div class="sliderContainer">
-        <div class="personBox">
-          <div class="personBoxTop">
-            <div class="personBoxTop__image">
-              <img src="/assets/member_0.png" alt="Thomas W. avatar">
-            </div>
-            <div class="personBoxTop__info">
-              <h4>Thomas W. Komorowski</h4>
-              <h5>M.D, FACC</h5>
-            </div>
-          </div>
-          <div class="personBoxBottom">
-            <h5>Specializiation</h5>
-            <ul>
-              <li>Interventional & Diagnostic Cardiology</li>
-              <li>Peripheral Arterial & Venous Disease</li>
-              <li>Nuclear Stress Testing</li>
-              <li>Echo Cardiology</li>
-            </ul>
-          </div>
-        </div>
+      <div class="sliderWrapper" id="viewLayer">
+        <div class="sliderContainer" id="slideLayer">
 
-        <div class="personBox">
-          <div class="personBoxTop">
-            <div class="personBoxTop__image">
-              <img src="/assets/member_1.png" alt="Thomas W. avatar">
+          <div class="personBox">
+            <div class="personBoxTop">
+              <div class="personBoxTop__image">
+                <img src="/assets/member_0.png" alt="Thomas W. avatar">
+              </div>
+              <div class="personBoxTop__info">
+                <h4>Thomas W. Komorowski</h4>
+                <h5>M.D, FACC</h5>
+              </div>
             </div>
-            <div class="personBoxTop__info">
-              <h4>Thomas W. Komorowski</h4>
-              <h5>M.D, FACC</h5>
+            <div class="personBoxBottom">
+              <h5>Specializiation</h5>
+              <ul>
+                <li>Interventional & Diagnostic Cardiology</li>
+                <li>Peripheral Arterial & Venous Disease</li>
+                <li>Nuclear Stress Testing</li>
+                <li>Echo Cardiology</li>
+              </ul>
             </div>
           </div>
-          <div class="personBoxBottom">
-            <h5>Specializiation</h5>
-            <ul>
-              <li>Interventional & Diagnostic Cardiology</li>
-            </ul>
-          </div>
-        </div>
 
-        <div class="personBox">
-          <div class="personBoxTop">
-            <div class="personBoxTop__image">
-              <img src="/assets/member_2.png" alt="Thomas W. avatar">
+          <div class="personBox">
+            <div class="personBoxTop">
+              <div class="personBoxTop__image">
+                <img src="/assets/member_1.png" alt="Thomas W. avatar">
+              </div>
+              <div class="personBoxTop__info">
+                <h4>Thomas W. Komorowski</h4>
+                <h5>M.D, FACC</h5>
+              </div>
             </div>
-            <div class="personBoxTop__info">
-              <h4>Thomas W. Komorowski</h4>
-              <h5>M.D, FACC</h5>
+            <div class="personBoxBottom">
+              <h5>Specializiation</h5>
+              <ul>
+                <li>Interventional & Diagnostic Cardiology</li>
+              </ul>
             </div>
           </div>
-          <div class="personBoxBottom">
-            <h5>Specializiation</h5>
-            <ul>
-              <li>Interventional & Diagnostic Cardiology</li>
-              <li>Peripheral Arterial & Venous Disease</li>
-              <li>Nuclear Stress Testing</li>
-            </ul>
-          </div>
-        </div>
 
-        <div class="personBox">
-          <div class="personBoxTop">
-            <div class="personBoxTop__image">
-              <img src="/assets/member_3.png" alt="Thomas W. avatar">
+          <div class="personBox">
+            <div class="personBoxTop">
+              <div class="personBoxTop__image">
+                <img src="/assets/member_2.png" alt="Thomas W. avatar">
+              </div>
+              <div class="personBoxTop__info">
+                <h4>Thomas W. Komorowski</h4>
+                <h5>M.D, FACC</h5>
+              </div>
             </div>
-            <div class="personBoxTop__info">
-              <h4>Thomas W. Komorowski</h4>
-              <h5>M.D, FACC</h5>
+            <div class="personBoxBottom">
+              <h5>Specializiation</h5>
+              <ul>
+                <li>Interventional & Diagnostic Cardiology</li>
+                <li>Peripheral Arterial & Venous Disease</li>
+                <li>Nuclear Stress Testing</li>
+              </ul>
             </div>
           </div>
-          <div class="personBoxBottom">
-            <h5>Specializiation</h5>
-            <ul>
-              <li>Interventional & Diagnostic Cardiology</li>
-              <li>Peripheral Arterial & Venous Disease</li>
-              <li>Nuclear Stress Testing</li>
-              <li>Echo Cardiology</li>
-            </ul>
+
+          <div class="personBox">
+            <div class="personBoxTop">
+              <div class="personBoxTop__image">
+                <img src="/assets/member_3.png" alt="Thomas W. avatar">
+              </div>
+              <div class="personBoxTop__info">
+                <h4>Thomas W. Komorowski</h4>
+                <h5>M.D, FACC</h5>
+              </div>
+            </div>
+            <div class="personBoxBottom">
+              <h5>Specializiation</h5>
+              <ul>
+                <li>Interventional & Diagnostic Cardiology</li>
+                <li>Peripheral Arterial & Venous Disease</li>
+                <li>Nuclear Stress Testing</li>
+                <li>Echo Cardiology</li>
+              </ul>
+            </div>
           </div>
+
         </div>
+      </div>
+
+      <div class="sliderMenu">
+        <div class="sliderMenu__arrow sliderMenu__arrow-left" id="slideBack"></div>
+        <div class="sliderMenu__arrow sliderMenu__arrow-right" id="slideForward"></div>
       </div>
 
       <button class="specialist__button">Join Our Team</button>
@@ -217,12 +226,11 @@
       <h1>Have any Questions?</h1>
 
       <div class="tabMenu">
-        <button class="tabMenu__button tabMenu__button-active">LOREM 1</button>
-        <button class="tabMenu__button">LOREM 2</button>
+        <button class="tabMenu__button tabMenu__button-active" target="block1">LOREM 1</button>
+        <button class="tabMenu__button" target="bloc2">LOREM 2</button>
       </div>
 
       <div class="questionsBlock">
-
         <div class="singleQuestion">
           <div class="singleQuestion__header">
             <h2 class="singleQuestion__quest">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, dolor.
@@ -257,8 +265,11 @@
           </p>
         </div>
       </div>
+
     </div>
   </section>
+
+  <script src="js/main.js" type="module"></script>
 </body>
 
 </html>
