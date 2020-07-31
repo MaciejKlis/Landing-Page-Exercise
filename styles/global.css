@@ -38,6 +38,10 @@ html {
   font-family: OpenSans;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 h1 {
   font-size: 4rem;
   font-weight: 700;

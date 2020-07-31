@@ -1,3 +1,5 @@
+/*** Welcome section ***/
+
 .welcome {
   display: flex;
   padding-top: 30px;
@@ -6,8 +8,8 @@
 .welcomeImages {
   width: 50%;
   min-height: 700px;
-  background: url('/assets/phone_app.png') no-repeat,
-              url('/assets/pattern.png') no-repeat;
+  background: url('../assets/phone_app.png') no-repeat,
+              url('../assets/pattern.png') no-repeat;
   background-position:  right center,
                         right center;
   background-size:  contain,
@@ -39,6 +41,8 @@
     padding: 0;
   }
 }
+
+/*** About section ***/
 
 .about {
   padding: 0 0 90px 0;
@@ -96,15 +100,15 @@
 }
 
 .featureBox__icon-plane {
-  background-image: url('/assets/plane.svg');
+  background-image: url('../assets/plane.svg');
 }
 
 .featureBox__icon-clipboard {
-  background-image: url('/assets/clipboard.svg');
+  background-image: url('../assets/clipboard.svg');
 }
 
 .featureBox__icon-phone {
-  background-image: url('/assets/phone.svg');
+  background-image: url('../assets/phone.svg');
 }
 
 .featureBox__title {
@@ -121,6 +125,8 @@
   background: #6bffe1;
   color: rgb(51, 50, 0);
 }
+
+/*** Specialist section ***/
 
 .specialists {
   padding: 36px 0 70px 0;
@@ -220,20 +226,33 @@
 }
 
 .sliderMenu__arrow {
-  width: 20px;
-  height: 20px;
-  background-repeat: no-repeat;
-  background-position: center; 
+  width: 32px;
+  height: 32px;
+  background-size: 24px 24px;
+  transition: background-size 1s ease-in;
   margin: 0 25px;
 }
 
+.sliderMenu__arrow:hover {
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+
+}
+
 .sliderMenu__arrow-left {
-  background: url('/assets/icon_chevron_left.svg');
+  background: url('../assets/icon_chevron_left.svg');
+  background-repeat: no-repeat;
+  background-position: center; 
 }
 
 .sliderMenu__arrow-right {
-  background: url('/assets/icon_chevron_right.svg');
+  background: url('../assets/icon_chevron_right.svg');
+  background-repeat: no-repeat;
+  background-position: center; 
 }
+
+/*** Pricing section ***/
 
 .pricing {
   background: #F2F2F2;
@@ -300,7 +319,7 @@
 .singleOfferInfo__icon {
   width: 20px;
   height: 20px;
-  background: url('/assets/check.svg') no-repeat center center;
+  background: url('../assets/check.svg') no-repeat center center;
   flex-shrink: 0;
 }
 
@@ -323,13 +342,15 @@
 .bestOffer__icon {
   width: 17px;
   height: 17px;
-  background: url('/assets/star.svg');
+  background: url('../assets/star.svg');
 }
 
 .bestOffer__text {
   margin: 0 0 0 10px;
   color: #fff;
 }
+
+/*** FAQ section ***/
 
 .faq {
   padding: 76px 0 150px 0;
@@ -344,6 +365,7 @@
   color: #000;
   font-size: 1.6rem;
   font-weight: 600;
+  padding: 15px 15px;
 }
 
 .tabMenu__button-active {
@@ -352,6 +374,11 @@
 
 .questionsBlock {
   width: 100%;
+  display: none;
+}
+
+.displayBlock {
+  display: block !important;
 }
 
 .singleQuestion {
@@ -394,17 +421,24 @@
 }
 
 .singleQuestion__icon-plus {
-  background-image: url('/assets/icon_plus.svg');
+  background-image: url('../assets/icon_plus.svg');
 }
 
 
 .singleQuestion__icon-minus {
-  background-image: url('/assets/icon_minus.svg');
+  background-image: url('../assets/icon_minus.svg');
+}
+
+.singleQuestion__descWrapper {
+  transition: height 1s ease-out;
+  height: 0;
+  overflow: hidden;
 }
 
 .singleQuestion__desc {
   max-width: 100%;
-  padding: 0 0 0 6px;
+  padding: 20px 0 20px 6px;
+  margin: 0;
 }
 
 /* General media queries*/

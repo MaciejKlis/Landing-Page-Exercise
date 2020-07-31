@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
-  <link rel="stylesheet" href="/styles/normalize.css">
-  <link rel="stylesheet" href="/styles/global.css">
-  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -27,6 +27,7 @@
   <section class="about">
     <div class="trangle"></div>
     <div class="container centerElements">
+
       <h1 class="whiteTextCenter">How App Works?</h1>
       <p class="whiteTextCenter"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequuntur autem est
         rerum
@@ -76,7 +77,7 @@
           <div class="personBox">
             <div class="personBoxTop">
               <div class="personBoxTop__image">
-                <img src="/assets/member_0.png" alt="Thomas W. avatar">
+                <img src="./assets/member_0.png" alt="Thomas W. avatar">
               </div>
               <div class="personBoxTop__info">
                 <h4>Thomas W. Komorowski</h4>
@@ -97,7 +98,7 @@
           <div class="personBox">
             <div class="personBoxTop">
               <div class="personBoxTop__image">
-                <img src="/assets/member_1.png" alt="Thomas W. avatar">
+                <img src="./assets/member_1.png" alt="Thomas W. avatar">
               </div>
               <div class="personBoxTop__info">
                 <h4>Thomas W. Komorowski</h4>
@@ -115,7 +116,7 @@
           <div class="personBox">
             <div class="personBoxTop">
               <div class="personBoxTop__image">
-                <img src="/assets/member_2.png" alt="Thomas W. avatar">
+                <img src="./assets/member_2.png" alt="Thomas W. avatar">
               </div>
               <div class="personBoxTop__info">
                 <h4>Thomas W. Komorowski</h4>
@@ -135,7 +136,7 @@
           <div class="personBox">
             <div class="personBoxTop">
               <div class="personBoxTop__image">
-                <img src="/assets/member_3.png" alt="Thomas W. avatar">
+                <img src="./assets/member_3.png" alt="Thomas W. avatar">
               </div>
               <div class="personBoxTop__info">
                 <h4>Thomas W. Komorowski</h4>
@@ -226,44 +227,112 @@
       <h1>Have any Questions?</h1>
 
       <div class="tabMenu">
-        <button class="tabMenu__button tabMenu__button-active" target="block1">LOREM 1</button>
-        <button class="tabMenu__button" target="bloc2">LOREM 2</button>
+        <button class="tabMenu__button tabMenu__button-active" data-target="block1">LOREM 1</button>
+        <button class="tabMenu__button" data-target="block2">LOREM 2</button>
+        <button class="tabMenu__button" data-target="block3">LOREM 3</button>
       </div>
 
-      <div class="questionsBlock">
-        <div class="singleQuestion">
+      <div class="questionsBlock displayBlock" id="block1">
+
+        <div class="singleQuestion" data-active="false">
           <div class="singleQuestion__header">
             <h2 class="singleQuestion__quest">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, dolor.
             </h2>
             <div class="singleQuestion__icon singleQuestion__icon-plus"></div>
           </div>
-          <p class="singleQuestion__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sit sed
-            vel earum corporis quos, sapiente facilis blanditiis pariatur modi mollitia minus quaerat commodi quibusdam
-            omnis? Magnam aut totam at praesentium perferendis nemo tempora mollitia corporis tenetur itaque? Earum,
-            cupiditate suscipit optio rem laborum iste eius adipisci consectetur praesentium iusto, fugit illo in ab
-            voluptatum sunt eligendi, corrupti commodi tempora vero explicabo iure! Et earum nemo magni nostrum veniam
-            itaque optio deserunt vel natus non voluptatibus ipsam ab dignissimos qui enim quaerat dicta assumenda
-            ducimus quas quae aliquam, omnis obcaecati aperiam. Officiis eaque earum ut cum distinctio esse porro odit.
-          </p>
+          <div class="singleQuestion__descWrapper">
+            <p class="singleQuestion__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Explicabo sit sed
+              vel earum corporis quos, sapiente facilis blanditiis pariatur modi mollitia minus quaerat commodi
+              quibusdam
+              omnis? Magnam aut totam at praesentium perferendis nemo tempora mollitia corporis tenetur itaque? Earum,
+              cupiditate suscipit optio rem laborum iste eius adipisci consectetur praesentium iusto, fugit illo in ab
+            </p>
+          </div>
         </div>
 
-        <div class="singleQuestion">
+        <div class="singleQuestion" data-active="false">
           <div class="singleQuestion__header">
-            <h2 class="singleQuestion__quest">Lorem ipsum dolor, sit amet consectetur adipisicing
-              elit. Repellat, dolor.
+            <h2 class="singleQuestion__quest">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, dolor.
             </h2>
-            <div class="singleQuestion__icon singleQuestion__icon-minus"></div>
+            <div class="singleQuestion__icon singleQuestion__icon-plus"></div>
           </div>
-          <p class="singleQuestion__desc" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit. Explicabo sit sed
-            vel earum corporis quos, sapiente facilis blanditiis pariatur modi mollitia minus quaerat commodi quibusdam
-            omnis? Magnam aut totam at praesentium perferendis nemo tempora mollitia corporis tenetur itaque? Earum,
-            cupiditate suscipit optio rem laborum iste eius adipisci consectetur praesentium iusto, fugit illo in ab
-            voluptatum sunt eligendi, corrupti commodi tempora vero explicabo iure! Et earum nemo magni nostrum veniam
-            itaque optio deserunt vel natus non voluptatibus ipsam ab dignissimos qui enim quaerat dicta assumenda
-            ducimus quas quae aliquam, omnis obcaecati aperiam. Officiis eaque earum ut cum distinctio esse porro odit.
-          </p>
+          <div class="singleQuestion__descWrapper">
+            <p class="singleQuestion__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Explicabo sit sed
+              vel earum corporis quos, sapiente facilis blanditiis pariatur modi mollitia minus quaerat
+              commodiquibusdam.
+            </p>
+          </div>
         </div>
+
+        <div class="singleQuestion" data-active="false">
+          <div class="singleQuestion__header">
+            <h2 class="singleQuestion__quest">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, dolor.
+            </h2>
+            <div class="singleQuestion__icon singleQuestion__icon-plus"></div>
+          </div>
+          <div class="singleQuestion__descWrapper">
+            <p class="singleQuestion__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Explicabo sit sed
+              vel earum corporis quos, sapiente facilis blanditiis pariatur modi mollitia minus quaerat commodi
+              quibusdam
+              omnis? Magnam aut totam at praesentium perferendis nemo tempora mollitia corporis tenetur itaque? Earum,
+              odit.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="questionsBlock" id="block2">
+
+        <div class="singleQuestion" data-active="false">
+          <div class="singleQuestion__header">
+            <h2 class="singleQuestion__quest">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, dolor.
+            </h2>
+            <div class="singleQuestion__icon singleQuestion__icon-plus"></div>
+          </div>
+          <div class="singleQuestion__descWrapper">
+            <p class="singleQuestion__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              omnis? Magnam aut totam at praesentium perferendis nemo tempora mollitia corporis tenetur itaque? Earum,
+              cupiditate suscipit optio rem laborum iste eius adipisci consectetur praesentium iusto, fugit illo in ab
+              voluptatum sunt eligendi, corrupti commodi tempora vero explicabo iure! Et earum nemo magni nostrum veniam
+              odit.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="questionsBlock " id="block3">
+
+        <div class="singleQuestion" data-active="false">
+          <div class="singleQuestion__header">
+            <h2 class="singleQuestion__quest">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, dolor.
+            </h2>
+            <div class="singleQuestion__icon singleQuestion__icon-plus"></div>
+          </div>
+          <div class="singleQuestion__descWrapper">
+            <p class="singleQuestion__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Explicabo sit sed
+              vel earum corporis quos, sapiente facilis blanditiis pariatur modi mollitia minus quaerat commodi
+              quibusdam
+            </p>
+          </div>
+        </div>
+
+        <div class="singleQuestion" data-active="false">
+          <div class="singleQuestion__header">
+            <h2 class="singleQuestion__quest">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, dolor.
+            </h2>
+            <div class="singleQuestion__icon singleQuestion__icon-plus"></div>
+          </div>
+          <div class="singleQuestion__descWrapper">
+            <p class="singleQuestion__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Explicabo sit sed
+            </p>
+          </div>
+        </div>
+
       </div>
 
     </div>
