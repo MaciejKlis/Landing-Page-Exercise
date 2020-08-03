@@ -10,6 +10,13 @@ export default class Slider {
     this.marginLeft = parseFloat(styleOfElement.marginLeft);
     this.marginRight = parseFloat(styleOfElement.marginRight);
     this.singleElementWidth = singleElement.clientWidth + this.marginLeft + this.marginRight;
+
+    window.addEventListener('resize', () => { this.resetLeftPosition() })
+  }
+
+  resetLeftPosition() {
+    this.left = 0;
+    this.updateSlideLayer();
   }
 
   maximumElementsOnSreen() {
